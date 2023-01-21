@@ -1,0 +1,366 @@
+{
+    "developers": [
+        "184439280980983808"
+    ],
+    "dataFolder": "database/",
+    "guildDataFolder": "database/guilds/",
+    "userDataFolder": "database/users/",
+    "noPermission": "You don't have permission to use this command.",
+    "slowdownMessage": "Slow down!",
+    "needToConfigure": "To use this command you must first do `/boar config`!",
+    "currentlyConfiguring": "BoarBot is currently being configured! Please wait!",
+    "wrongChannel": "Wrong channel! Please use this command in the following channel(s):",
+    "noGuild": "This isn't a server!",
+    "errorOccurred": "Something went wrong! Please try again in a few minutes.",
+    "alreadyDeleted": "Tried to delete file but it was already deleted.",
+    "nullValues": "One or more inputs are `null`!",
+    "invalidID": "Invalid ID.",
+    "config": {
+        "cancelled": ":x: **__Configuration was cancelled!__**",
+        "error": ":exclamation: **__An error occurred while getting information! Try again later.__**",
+        "finished": ":white_check_mark: **__Boar Bot has successfully been configured! Do `/boar daily` in one of the boar channels you chose to get started.__**",
+        "expired": ":question: **__You haven't interacted with the form for 2 minutes! Automatically terminating configuration.__**",
+        "noAttachmentPerms": ":exclamation: **WARNING:** The bot doesn't have attachment permissions, so some (or all) interactive images may not appear.",
+        "fieldOne": {
+            "content": {
+                "unfinished": ":red_circle: **What channel can be used for trading?** \n*(Note: Threads will dynamically be created in this channel.)*",
+                "finished": ":green_circle: **The channel you're using for trading is: **"
+            }
+        },
+        "fieldTwo": {
+            "content": {
+                "unfinished": ":red_circle: **What channels can BoarBot commands be used in? [Max 3]** \n*(Note: If you have a lot of server members, these channels may get flooded.)*",
+                "finished": ":green_circle: **These are the channels you've selected for Boar Bot to work in: **"
+            }
+        },
+        "fieldThree": {
+            "content": {
+                "unfinished": ":red_circle: **Is this server part of the Hypixel Skyblock community?**",
+                "finished": ":green_circle: **Part of the Hypixel Skyblock community: **"
+            }
+        },
+        "tradeInfo": "**__TRADE CHANNEL__**\n\nThis bot has a trading system! In order for the trading system to work properly, it needs its own channel. Threads will dynamically be created and deleted in this channel unless the bot doesn't have permission to do so. If this is the case, trading will unfortunately be automatically disabled.\n > *This channel can be changed at any time using* `/boar config`*.*\n > *Use :pencil: to enter a channel ID (right-click channel name, Copy ID) that isn't shown in the select box.*",
+        "boarChannelsInfo": "**__BOAR CHANNELS__**\n\nObviously, this bot has slash commands. Slash commands can produce spammy content depending on how large your server is, so you'll need to decide which channels the bot is enabled in.\n > *These channels can be changed at any time using* `/boar config`*.*\n > *Use :pencil: to enter a channel ID (right-click channel name, Copy ID) that isn't shown in the select box.*",
+        "skyblockInfo": "**__SKYBLOCK COMMUNITY__**\n\nThis bot originated on a Discord server dedicated to Hypixel Skyblock. If you don't know what that is, no sweat! Just click \"No\". If you do and you're part of the community, I recommend you click \"Yes\".\n > *This can be changed at any time using* `/boar config`*.*"
+    },
+    "daily-give": {
+        "usedDaily": "You've already used your daily boar! The next time you can use the command is ",
+        "gaveBoar": "Successfully given boar (If it didn't show, make sure perms are correct!)",
+        "gaveBadge": "Successfully given badge (If it didn't show, make sure perms are correct!)",
+        "dailyTitle": "Daily Boar!",
+        "givenTitle": "Boar Given!",
+        "badgeTitleGiven": "Badge Given!",
+        "badgeTitleObtained": "Badge Obtained!",
+        "specialGivenTitle": "SPECIAL BOAR GIVEN!"
+    },
+    "commandDescriptions": {
+        "help": "See all boar commands",
+        "config": "Configure the bot to your liking [ADMIN-ONLY]",
+        "daily": "Get your daily boar",
+        "give": "Give a user a boar [DEV]",
+        "give-arg1": "User you'd like to give the boar to",
+        "give-arg2": "ID of boar to give",
+        "collection": "View your collection of daily boars",
+        "collection-arg1": "Check someone else's collection of boars",
+        "give-badge": "Give a user a badge [DEV]",
+        "give-badge-arg1": "User you'd like to give the badge to",
+        "give-badge-arg2": "ID of badge to give"
+    },
+    "helpImages": {
+        "background": "assets/Help.png"
+    },
+    "boarIDs": {
+        "common": {
+            "normal": {
+                "name": "Normal Boar",
+                "file": "NormalBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "explosionless": {
+                "name": "Explosionless Boar",
+                "file": "ExplosionlessBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "tiny": {
+                "name": "Tiny Boar",
+                "file": "TinyBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "SCORE_VALUE": 1,
+            "PROBABILITY": -1,
+            "COLOR": "#FFFFFF"
+        },
+        "uncommon": {
+            "carrot": {
+                "name": "Carrot Boar",
+                "file": "CarrotBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "buff": {
+                "name": "Buff Boar",
+                "file": "BuffBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "chocolate": {
+                "name": "Chocolate Boar",
+                "file": "ChocolateBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "emo": {
+                "name": "Emo Boar",
+                "file": "EmoBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "matrix": {
+                "name": "Matrix Boar",
+                "file": "MatrixBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "soda": {
+                "name": "Soda Boar",
+                "file": "SodaBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "SCORE_VALUE": 10,
+            "PROBABILITY": 0.1,
+            "COLOR": "#00FF0F"
+        },
+        "rare": {
+            "clown": {
+                "name": "Clown Boar",
+                "file": "ClownBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "sphere": {
+                "name": "Sphere Boar",
+                "file": "SphereBoar.gif",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "killer": {
+                "name": "Killer Boar",
+                "file": "KillerBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "fish": {
+                "name": "Boarfish",
+                "file": "FishBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "fruit": {
+                "name": "Fruit Boar",
+                "file": "FruitBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "rainy": {
+                "name": "Rainy Boar",
+                "file": "RainyBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "golden": {
+                "name": "Golden Boar",
+                "file": "GoldenBoar.png",
+                "isSB": true,
+                "blacklisted": false
+            },
+            "SCORE_VALUE": 25,
+            "PROBABILITY": 0.1,
+            "COLOR": "#0064FF"
+        },
+        "epic": {
+            "creepy": {
+                "name": "Creepy Boar",
+                "file": "CreepyBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "robot": {
+                "name": "RoboBoar-9000",
+                "file": "RobotBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "coffee": {
+                "name": "Coffee Girl Boar",
+                "file": "CoffeeGirlBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "moon": {
+                "name": "Moon Boar",
+                "file": "MoonBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "necron": {
+                "name": "Necron Boar",
+                "file": "NecronBoar.png",
+                "isSB": true,
+                "blacklisted": false
+            },
+            "wizard": {
+                "name": "Wizard Boar",
+                "file": "WizardBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "aurora": {
+                "name": "Aurora Boarealis",
+                "file": "AuroraBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "SCORE_VALUE": 50,
+            "PROBABILITY": 0.1,
+            "COLOR": "#6400FF"
+        },
+        "legendary": {
+            "minimumwage": {
+                "name": "Minimum Wage Boar",
+                "file": "MinimumWageBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "backrooms": {
+                "name": "Backrooms Boar",
+                "file": "BackroomsBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "jumpscare": {
+                "name": "Jumpscare Boar",
+                "file": "JumpscareBoar.gif",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "SCORE_VALUE": 100,
+            "PROBABILITY": 0.1,
+            "COLOR": "#FFC500"
+        },
+        "mythic": {
+            "cowboy": {
+                "name": "Cowboar",
+                "file": "CowboyBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "realistic": {
+                "name": "Realistic Boar",
+                "file": "RealisticBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "hogrider": {
+                "name": "Boar Rider",
+                "file": "BoarRider.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "farmer": {
+                "name": "Farmer Boar",
+                "file": "FarmerBoar.png",
+                "isSB": true,
+                "blacklisted": false
+            },
+            "SCORE_VALUE": 250,
+            "PROBABILITY": 0.1,
+            "COLOR": "#F300FF"
+        },
+        "divine": {
+            "rickroll": {
+                "name": "Rickroll Boar",
+                "file": "RickrollBoar.gif",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "morbius": {
+                "name": "Boarbius",
+                "file": "Boarbius.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "god": {
+                "name": "God of All Boars",
+                "file": "GodofAllBoars.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "imposter": {
+                "name": "Imposter Boar",
+                "file": "ImposterBoar.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "curious": {
+                "name": "Curious Boarge",
+                "file": "CuriousBoarge.png",
+                "isSB": false,
+                "blacklisted": false
+            },
+            "SCORE_VALUE": 1000,
+            "PROBABILITY": 0.1,
+            "COLOR": "#00FFFB"
+        }
+    },
+    "badgeIDs": {
+        "early-supporter": {
+            "name": "Early Subboarter",
+            "file": "EarlySupporter.png",
+            "description": "Anyone with this badge boosted in the server BoarBot originated in!"
+        },
+        "hunter": {
+            "name": "Boar Hunter",
+            "file": "Hunter.png",
+            "description": "Those that obtain ALL unique boars get this badge!"
+        },
+        "artist": {
+            "name": "Boartist",
+            "file": "Artist.png",
+            "description": "If you made your own boar and it made it into BoarBot, you get this badge!"
+        },
+        "athlete": {
+            "name": "Boarthlete",
+            "file": "Athlete.png",
+            "description": "Only those that are #1 on any leaderboard receive this badge!"
+        }
+    },
+    "emptyUser": {
+        "lastDaily": 0,
+        "numDailies": 0,
+        "totalBoars": 0,
+        "boarScore": 0,
+        "favoriteBoar": "",
+        "lastBoar": "",
+        "firstDaily": 0,
+        "powerupsWon": 0,
+        "boarStreak": 0,
+        "boarCollection": {},
+        "powerups": {
+            "multiplier": 1,
+            "enhancers": 0,
+            "gifts": 0
+        },
+        "theme": "normal",
+        "themes": ["normal"],
+        "badges": []
+    },
+    "imageColors": {
+        "foregroundGray": "#151518"
+    },
+    "unlimitedBoars": true,
+    "debugMode": true
+}
